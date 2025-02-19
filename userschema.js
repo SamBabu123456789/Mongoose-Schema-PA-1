@@ -16,4 +16,7 @@ const profileschema =new mongoose.Schema({
     age:{type:Number},
 })
 const profile = mongoose.model('profile',mongoose.schema)
-const activitySchema
+const activitySchema =  new mongoose.schema({
+    lastlogin:{type:Date}
+})
+const activity =mongoose.model('activity',activityschema)
